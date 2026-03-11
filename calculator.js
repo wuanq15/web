@@ -41,3 +41,10 @@ class Calculator {
         this.value = Math.pow(this.value, number);
         return this.value;
     }
+
+    squareRoot() {
+        // calculate square root
+        if (this.value < 0) return null;
+        this.value = Math.sqrt(this.value);
+        return this.value;
+    }
