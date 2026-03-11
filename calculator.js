@@ -25,12 +25,12 @@ class Calculator {
     }
 
     divide(number) {
-        // basic division
+        // division with infinity handling
         if (number === 0) {
-            console.error("Divide by zero");
-            return null;
+            this.value = Infinity;
+            return this.value;
         }
-        this.value /= number;
+        this.value = this.value / number;
         return this.value;
     }
 }
