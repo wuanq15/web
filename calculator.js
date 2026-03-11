@@ -33,3 +33,10 @@ class Calculator {
         return this.value;
     }
 }
+
+    modulo(number) {
+        // basic modulo operation logic
+        if (number === 0) return null;
+        this.value = this.value % number;
+        return this.value;
+    }
