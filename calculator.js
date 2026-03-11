@@ -47,3 +47,10 @@ class Calculator {
         this.value = Math.sqrt(this.value);
         return this.value;
     }
+
+    inverse() {
+        // calculate mathematical inverse
+        if (this.value === 0) throw new Error("Zero inverse");
+        this.value = 1 / this.value;
+        return this.value;
+    }
