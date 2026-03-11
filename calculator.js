@@ -33,7 +33,7 @@ class Calculator {
         this.value = this.value / number;
         return this.value;
     }
-}
+
 
     power(number) {
         // basic exponentiation implementation
@@ -54,3 +54,4 @@ class Calculator {
         this.value = 1 / this.value;
         return this.value;
     }
+}
