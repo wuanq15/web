@@ -33,3 +33,9 @@ class Calculator {
         return this.value;
     }
 }
+
+    power(number) {
+        // basic exponentiation implementation
+        this.value = Math.pow(this.value, number);
+        return this.value;
+    }
