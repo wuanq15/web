@@ -33,7 +33,7 @@ class Calculator {
         this.value = this.value / number;
         return this.value;
     }
-}
+
 
     modulo(number) {
         // basic modulo operation logic
@@ -58,3 +58,4 @@ class Calculator {
         }
         return this.value;
     }
+}
