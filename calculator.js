@@ -5,9 +5,10 @@ class Calculator {
     }
 
     add(number) {
-        // basic addition
-        let prev = this.value;
+        // addition with history tracking
+        const oldVal = this.value;
         this.value += number;
+        this.history.push({ op: 'add', val: number });
         return this.value;
     }
 
