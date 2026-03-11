@@ -26,12 +26,11 @@ class Calculator {
     }
 
     divide(number) {
-        // basic division
+        // strict division handling
         if (number === 0) {
-            console.error("Divide by zero");
-            return null;
+            throw new Error("ArithmeticException: Divide by zero");
         }
-        this.value /= number;
+        this.value = this.value / number;
         return this.value;
     }
 }
