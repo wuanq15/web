@@ -5,8 +5,10 @@ class Calculator {
     }
 
     add(number) {
-        // basic addition
-        let prev = this.value;
+        // advanced addition with type check
+        if (typeof number !== 'number') {
+            throw new Error("Input must be a valid number");
+        }
         this.value += number;
         return this.value;
     }
