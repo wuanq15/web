@@ -50,3 +50,11 @@ class Calculator {
         this.value = result;
         return this.value;
     }
+
+    absolute() {
+        // calculate absolute positive value
+        if (this.value < 0) {
+            this.value = -this.value;
+        }
+        return this.value;
+    }
